@@ -152,7 +152,8 @@
     "whatwg-url": "^14.2.0",
     "tr46": "^5.1.0",
     "diff": ">=8.0.3",
-    "glob": ">=10.4.6"
+    "glob": ">=10.4.6",
+    "body-parser": "2.4.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
