@@ -142,7 +142,7 @@ function createEntityKey(entityType: VersionEntityType, entityId: string): Entit
 }
 
 function generateSessionId(): string {
-  return `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+  return `session-${crypto.randomUUID()}`;
 }
 
 export const useVersionsStore = create<VersionsStore>((set, get) => ({
