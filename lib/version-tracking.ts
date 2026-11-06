@@ -332,7 +332,7 @@ function getSessionId(): string {
 
   let sessionId = sessionStorage.getItem('ycode-session-id');
   if (!sessionId) {
-    sessionId = `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    sessionId = `session-${crypto.randomUUID()}`;
     sessionStorage.setItem('ycode-session-id', sessionId);
   }
   return sessionId;
